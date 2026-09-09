@@ -10,7 +10,7 @@ public class ranNum{
     }
 }
 ```
-<h2>Evidence</h2>
+
 
 
 <h1>Quiz 2</h1>
@@ -31,7 +31,7 @@ public class IPv4Gen{
 }
 ```
 
-<h2>Evidence</h2>
+
 
 
 <h1>Quiz 3</h1>
@@ -50,7 +50,7 @@ public class check{
 }
 ```
 
-<h2>Evidence</h2>
+
 
 <h1>Quiz 4</h1>
 
@@ -75,7 +75,7 @@ public class porter{
 }
 ```
 
-<h2>Evidence</h2>
+
 
 
 <h1>Quiz 5</h1>
@@ -99,7 +99,7 @@ public class dns{
 }
 ```
 
-<h2>Evidence</h2>
+
 
 <h1>Quiz 6</h1>
 
@@ -132,7 +132,7 @@ public class filter{
 }
 ```
 
-<h2>Evidence</h2>
+
 
 <h1>Quiz 7</h1>
 
