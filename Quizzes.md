@@ -139,11 +139,26 @@ public class filter{
 ![IMG_7031](https://github.com/user-attachments/assets/2af3faed-3ff6-4c04-aada-d331dff804c4)
 
 
+<h1>Quiz 8</h1>
 
+```java
+public class nat{
+    private String transPort = "203.0.113.55";
+    private int portNum = 10000;
+    public String get_new_trans(String ip, int port){
+        String translated;
+        portNum+=1;
+        translated = transPort + portNum;
+        return translated;
+    }
+}
+```
 
+<h1>Quiz 8</h1>
 
+```java
 
-
+```
 
 
 
