@@ -1,4 +1,4 @@
-<h1>Quiz 1</h1>
+<img width="1440" height="900" alt="Screenshot 2026-10-16 at 11 34 54" src="https://github.com/user-attachments/assets/dc9ae4c7-e8c6-479e-bbf7-9e13ce412cc1" /><h1>Quiz 1</h1>
 
 ```java
 import java.util.Random;
@@ -358,6 +358,11 @@ public class ADC{
     }
 }
 ```
+
+
+<h1>Proofs</h1>
+<img width="1440" height="900" alt="Screenshot 2026-10-16 at 11 34 41" src="https://github.com/user-attachments/assets/a65e55ef-002a-4110-af12-ddf7c2dcaa6a" />
+<img width="1440" height="900" alt="Screenshot 2026-10-16 at 11 34 45" src="https://github.com/user-attachments/assets/0d68fcfc-e3a7-4de6-aabf-9f3fa5692988" />
 
 
 
