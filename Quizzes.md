@@ -154,6 +154,9 @@ public class nat{
 }
 ```
 
+
+
+
 <h1>Quiz 9</h1>
 
 ```java
@@ -187,6 +190,7 @@ public class Matrix {
     }
 }
 ```
+
 
 
 <h1>Quiz 10</h1>
@@ -229,6 +233,10 @@ public class Matrix{
     }
 }
 ```
+
+
+
+
 <h1>Quiz 12</h1>
 
 ```java
@@ -245,6 +253,8 @@ public int[] vectorize(){
     return vector;
 }
 ```
+
+
 
 <h1>Quiz 13/h1>
 
@@ -270,6 +280,9 @@ public class Matrix{
     }
 ```
 
+
+
+
 <h1>Quiz 14/h1>
 
 ```java
@@ -293,6 +306,10 @@ public class Matrix{
     }
 }
 ```
+
+
+
+
 <h1>Quiz 15/h1>
 
 ```java
@@ -305,6 +322,9 @@ public class ADC{
     }
 }
 ```
+
+
+
 
 <h1>Quiz 16/h1>
 
