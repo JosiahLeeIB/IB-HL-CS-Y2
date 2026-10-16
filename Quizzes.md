@@ -154,10 +154,185 @@ public class nat{
 }
 ```
 
-<h1>Quiz 8</h1>
+<h1>Quiz 9</h1>
 
 ```java
+public class Matrix {
+    private int[][] matrix;
 
+    public Matrix(int[][] a) {
+        matrix = a;
+    }
+
+    public double[][] averages() {
+        double[] rowSums = new double[matrix.length];
+        double[] colSums = new double[matrix[0].length];
+
+        for (int row = 0; row < matrix.length; row++) {
+            for (int col = 0; col < matrix[row].length; col++) {
+                rowSums[row] += matrix[row][col];
+                colSums[col] += matrix[row][col];
+            }
+        }
+
+        for (int row = 0; row < rowSums.length; row++) {
+            rowSums[row] /= matrix[0].length;
+        }
+
+        for (int col = 0; col < colSums.length; col++) {
+            colSums[col] /= matrix.length;
+        }
+
+        return new double[][] {rowSums, colSums};
+    }
+}
+```
+
+
+<h1>Quiz 10</h1>
+
+```java
+public class Matrix{
+    private int[][] matrix;
+    public Matrix(int a){
+        matrix = new int[a][a];
+    }
+    public int[][] scale(int m){
+        for(int row = 0; row < matrix.length; row++){
+            for(int col = 0; col < matrix[row].length;col++){
+                matrix[row][col] = matrix[row][col]*m;
+            }
+        }
+        return matrix;
+    }
+}
+```
+
+<h1>Quiz 11</h1>
+
+```java
+public class Matrix{
+    private int matrix;
+    public Matrix(int a){
+        matrix = a;
+    }
+    public int[][] identify(){
+        int[][] total = new int[matrix][matrix];
+        for(int row = 0; row < total.length; row++){
+            for(int col = 0; col < total[row].length;col++){
+                if(row == col){
+                    total[row][col] = 1;
+                }
+            }
+        }
+        return total;
+    }
+}
+```
+<h1>Quiz 12</h1>
+
+```java
+public int[] vectorize(){
+    int length = matrix.length * matrix[0].length;
+    int[] vector = new int[length];
+    int position = 0;
+    for(int i = 0;i<matrix.length;i++){
+        for(int x = 0;x<matrix.length;x++){
+            matrix[i][x]=vector[position];
+            position++;
+        }
+    }
+    return vector;
+}
+```
+
+<h1>Quiz 13/h1>
+
+```java
+public class Matrix{
+    private int[] matrix;
+    public Matrix(int[] a){
+        matrix = a;
+    }
+    public int[][] toMatrix(){
+        int size = (int) Math.ceil(Math.sqrt(matrix.length));
+        int[][] newMatrix = new int[size][size];
+        int position = 0;
+        for(int row =0;row<newMatrix.length;row++){
+            for(int col=0;col < newMatrix[row].length;col++){
+                if(position < matrix.length){
+                    newMatrix[row][col] = matrix[position];
+                    position++;
+                }
+            }
+        }
+        return newMatrix;
+    }
+```
+
+<h1>Quiz 14/h1>
+
+```java
+public class Matrix{
+    private int matrix;
+    public Matrix(int a){
+        matrix = a;
+    }
+    public int[][] diagonal(){
+        int increment = 0;
+        int[][] total = new int[matrix][matrix];
+        for(int row = 0; row < total.length; row++){
+            for(int col = 0; col < total[row].length;col++){
+                if(row == col){
+                    total[row][col] = increment;
+                    increment++;
+                }
+            }
+        }
+        return total;
+    }
+}
+```
+<h1>Quiz 15/h1>
+
+```java
+public class ADC{
+    private double perbit;
+    public double calculateADCerror(double sample){
+        perbit = (double) 5/Math.pow(2, 6);
+        return sample % perbit;
+
+    }
+}
+```
+
+<h1>Quiz 16/h1>
+
+```java
+public class ADC{
+    public static int calculateResolution(double minVoltage, double maxVoltage, double[] readings) {
+        double smallestDifference = Double.MAX_VALUE;
+
+        for (int i = 0; i < readings.length; i++) {
+            for (int x = i + 1; x < readings.length; x++) {
+                double difference = Math.abs(readings[i] - readings[x]);
+
+                if (difference > 0 && difference < smallestDifference) {
+                    smallestDifference = difference;
+                }
+            }
+        }
+
+        double requiredLevels = (maxVoltage - minVoltage) / smallestDifference;
+        int bits = 0;
+
+        while (Math.pow(2, bits) < requiredLevels) {
+            bits++;
+        }
+
+        return bits;
+    }
+}
 ```
 
 
