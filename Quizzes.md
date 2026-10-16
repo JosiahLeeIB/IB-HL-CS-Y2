@@ -257,7 +257,7 @@ public int[] vectorize(){
 
 
 
-<h1>Quiz 13/<h1>
+<h1>Quiz 13</h1>
 
 ```java
 public class Matrix{
@@ -285,7 +285,7 @@ public class Matrix{
 
 
 
-<h1>Quiz 14/<h1>
+<h1>Quiz 14</h1>
 
 ```java
 public class Matrix{
@@ -313,7 +313,7 @@ public class Matrix{
 
 
 
-<h1>Quiz 15/<h1>
+<h1>Quiz 15</h1>
 
 ```java
 public class ADC{
@@ -330,7 +330,7 @@ public class ADC{
 
 
 
-<h1>Quiz 16/<h1>
+<h1>Quiz 16</h1>
 
 ```java
 public class ADC{
