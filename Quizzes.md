@@ -256,6 +256,7 @@ public int[] vectorize(){
 
 
 
+
 <h1>Quiz 13/h1>
 
 ```java
@@ -279,6 +280,7 @@ public class Matrix{
         return newMatrix;
     }
 ```
+
 
 
 
@@ -310,6 +312,7 @@ public class Matrix{
 
 
 
+
 <h1>Quiz 15/h1>
 
 ```java
@@ -322,6 +325,7 @@ public class ADC{
     }
 }
 ```
+
 
 
 
