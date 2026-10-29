@@ -140,6 +140,36 @@ class act{
         for (double value : a) {
             squaredDifferences += Math.pow(value - mean, 2);
         }
+
+        double q1 = findMedian(a, 0, n / 2);
+        double q3;
+
+        if (n % 2 == 0) {
+            q3 = findMedian(a, n / 2, n);
+        } else {
+            q3 = findMedian(a, n / 2 + 1, n);
+        }
+
+
+        double iqr = q3 - q1;
+
+
+        double lowerFence = q1 - 1.5 * iqr;
+        double upperFence = q3 + 1.5 * iqr;
+
+
+        int outliers = 0;
+
+        for (double value : a) {
+            if (value < lowerFence || value > upperFence) {
+                outliers++;
+            }
+        }
+
+        System.out.println("Q1: " + q1);
+        System.out.println("Q3: " + q3);
+        System.out.println("IQR: " + iqr);
+        System.out.println("Number of outliers: " + outliers);
         double standardDeviation = Math.sqrt(squaredDifferences / n);
         System.out.println("mean: "+mean);
         System.out.println("median: "+median);
@@ -147,7 +177,23 @@ class act{
         System.out.println("max: "+max);
         System.out.println("stddev: "+standardDeviation);
     }
+    public static double findMedian(ArrayList<Double> values, int start, int end) {
+        int n = end - start;
+
+        if (n <= 0) {
+            return Double.NaN;
+        }
+
+        if (n % 2 == 0) {
+            return (values.get(start + n / 2 - 1)
+                    + values.get(start + n / 2)) / 2.0;
+        } else {
+            return values.get(start + n / 2);
+        }
+    }
+
 }
+
 
 
 ```
