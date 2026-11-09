@@ -366,4 +366,8 @@ public class ADC{
 <img width="1440" height="900" alt="Screenshot 2026-10-16 at 11 34 54" src="https://github.com/user-attachments/assets/dc9ae4c7-e8c6-479e-bbf7-9e13ce412cc1" />
 
 
+<h1>Quiz 17</h1>
+Encapsulation is the process of adding specific headers for each protocol to data as it moves across the TCP/IP model.
+
+
 
