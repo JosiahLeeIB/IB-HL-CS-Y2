@@ -367,7 +367,27 @@ public class ADC{
 
 
 <h1>Quiz 17</h1>
-Encapsulation is the process of adding specific headers for each protocol to data as it moves across the TCP/IP model.
+Encapsulation is the process of adding specific headers for each protocol to data as it moves across the TCP/IP model. Each layer has its own information, allowing the device to transfer data.
 
+<h1>Quiz 18</h1>
+Tunneling: Creating secure connections through existing networks
+Encryption: Making data unreadable to outside parties
+Authentication: Verifying user identity
 
+<h1>Quiz 19</h1>
+HTTP or Hyper Text Transfer Protocol. HTTP is used to transfer web pages between the client and the server. 
 
+<h1>Quiz 20</h1>
+Missing value handling. This is when you find records that contain missing data and either remove or fill in those entries. 
+
+<h1>Quiz 21</h1>
+Some customers could leave questions blank and unanswered. This incompletet data would then need to go through data preprocessing to make sure that the algorithm runs into no missing data errors by either removing or filling in the unanswered category. For example, missing numerical responses could be replaced with the mean or median of the available responses. This allows the model to work with a more complete and consistent dataset.
+
+<h1>Quiz 22</h1>
+Firstly, data preprocessing allows for the training data to be accurate for the machine learning model. You can remove or fill in missing data. You can normalize the data to specific ranges in order to prevent a disproportional influence in features, such as exam scores or attedance. You can also remove repeated or false data. This helps remove the chance of incorrect patterns observered in the model. Finally, irrelevant features can be removed through feature selection, reducing unnecessary complexity and helping the model focus on the most important factors influencing student performance.
+
+<h1>Quiz 23</h1>
+A university could use a wrapper method to reduce the dimensionality of its dataset by testing different combinations of the 50 applicant metrics. The wrapper method would repeatedly train and evaluate an ML model using different subsets of features to determine which combination produces the best predictive performance. For example, it might discover that academic grades, attendance and extracurricular involvement are more useful predictors than some other metrics. Irrelevant or redundant features can then be removed, reducing the number of dimensions in the dataset. This decreases computational complexity and training time while potentially reducing overfitting.
+
+<h1>Quiz 24</h1>
+It is used to determine how well the model generalizes unseen data. The dataset is divided into K equally sized folds. The model is trained on K−1 folds and tested on the remaining fold. This process is repeated K times, with a different fold used for testing each time. The performance results are then averaged to produce a more reliable estimate of the model's accuracy.
